@@ -98,3 +98,18 @@ Crie uma função `formatarProduto` que retorne uma frase com o nome e o preço 
 ## Entrega
 
 Entregue o arquivo JavaScript com os testes dos códigos `102` e `999` e as respostas das seis questões de análise abaixo, editando este arquivo.
+
+Respostas das questões: 
+
+`1:` A palavra-chave async é obrigatória para habilitar o uso do operador await dentro do corpo da função. 
+
+
+`2:` O await pausa a execução da função até que a Promise retornada por buscarProduto(codigo) seja totalmente resolvida ou rejeitada.
+
+`3:` O bloco catch roda quando a Promise é rejeitada, o que acontece se o código do produto não existir no banco de dados.
+
+`4:` Porque o bloco finally garante a execução do código ao término de todo o fluxo, funcionando tanto após um sucesso quanto após um erro. 
+
+`5:` A função não esperaria a Promise terminar, retornando o objeto da Promise pendente e resultando em valores indefinidos na exibição dos dados.
+
+`6:` O async/await torna o código mais limpo, linear e legível, permitindo tratar erros com a estrutura padrão try...catch de forma similar ao código síncrono.
