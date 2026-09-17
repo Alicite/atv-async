@@ -98,3 +98,25 @@ Crie uma função `formatarProduto` que retorne uma frase com o nome e o preço 
 ## Entrega
 
 Entregue o arquivo JavaScript com os testes dos códigos `102` e `999` e as respostas das seis questões de análise abaixo, editando este arquivo.
+
+/*  Respostas das perguntas
+
+1. A função precisa ser async porque ela usa o await para esperar
+o resultado da busca do produto
+
+2. O await espera a função buscarProduto retornar
+o produto ou um erro
+
+3. O catch é executado quando acontece um erro durante a execução
+do bloco try,como quando o produto não é encontrado
+
+4. A mensagem final fica no finally porque esse bloco sempre é
+executado, mesmo quando acontece um erro
+
+5. Sem o await, a variável ia receber a Promise em vez do resultado
+da busca, então não poderia acessar diretamente os dados do produto
+
+6. O async/await deixa o código mais fácil de entender,
+principalmente para esperar o resultado e tratar os erros, evitando
+vários .then() encadeados
+*/
