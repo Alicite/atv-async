@@ -77,11 +77,17 @@ Com `exibirProduto(999)`, deverá apresentar uma mensagem de erro e, depois, `Co
 Depois de executar os dois testes, responda às perguntas a seguir com suas próprias palavras:
 
 1. Por que `exibirProduto` precisa ser declarada com `async`?
+  1R: Porque permite usar a palavra-chave await dentro da função e faz com que ela retorne uma Promise automaticamente.
 2. O que o `await` aguarda nesse exemplo?
+  2R: Ele pausa a execução da função até que a Promise de buscarProduto seja resolvida com sucesso ou rejeitada com erro.
 3. Em qual situação o bloco `catch` é executado?
+  3R: Ele é executado quando a Promise é rejeitada (Ex.: ao buscar um código de produto que não existe).
 4. Por que a mensagem final deve ficar no bloco `finally`?
+  4R: Porque garante que o trecho do código seja executado sempre ao final, independentemente de ter corrido tudo bem ou de ter ocorrido um erro.
 5. O que aconteceria se o `await` fosse removido?
+  5R: A variável receberia a Promise em estado pendente em vez dos dados reais, fazendo a formatação falhar com valores undefined e ignorando a espera do setTimeout.
 6. Qual é a vantagem de usar `async/await` em vez de encadear vários `.then()` neste caso?
+  6R: Deixa o código com aparência síncrona, facilitando a leitura de cima para baixo e permitindo tratar erros com a estrutura tradicional try/catch/finally.
 
 ## Desafio opcional
 
