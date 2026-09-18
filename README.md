@@ -98,3 +98,20 @@ Crie uma função `formatarProduto` que retorne uma frase com o nome e o preço 
 ## Entrega
 
 Entregue o arquivo JavaScript com os testes dos códigos `102` e `999` e as respostas das seis questões de análise abaixo, editando este arquivo.
+
+
+/*
+Respostas:
+
+1. Porque ela vai usar o await para esperar a resposta da função buscarProduto. O async permite que o await seja usado dentro dela.
+
+2. Ele espera a resposta da função buscarProduto(codigo), para só depois continuar o código.
+
+3. Quando acontece algum erro. Nesse caso, por exemplo, quando é colocado um código de produto que não existe, como o 999.
+
+4. Porque o finally sempre é executado, dando certo ou acontecendo algum erro. Então a mensagem "Consulta encerrada." vai aparecer nos dois casos.
+
+5. O código não esperaria a resposta da função antes de continuar. Isso poderia fazer com que o resultado não estivesse disponível na hora em que fosse necessário.
+
+6. O código fica mais fácil de entender e organizar. Também fica mais simples tratar os erros usando try e catch.
+*/
