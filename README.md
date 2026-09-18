@@ -98,3 +98,22 @@ Crie uma função `formatarProduto` que retorne uma frase com o nome e o preço 
 ## Entrega
 
 Entregue o arquivo JavaScript com os testes dos códigos `102` e `999` e as respostas das seis questões de análise abaixo, editando este arquivo.
+
+
+1-R: async function é muito similar, e tem quase a mesma sintaxe de uma declaração async function. A principal diferença entre uma expressão async function e uma declaração async function é o nome da função, que pode ser omitido em expressões async function para criar funções anônimas. 
+
+2-R:A expressão await faz a execução de uma função async pausar, para esperar pelo retorno da Promise, e resume a execução da função async quando o valor da Promise é resolvido.
+ Ele então retorna o valor final da Promise. Se esse valor não for uma Promise, ele é convertido para uma Promise resolvida.
+
+3-R:O método catch() retorna uma Promise e lida apenas com casos rejeitados. Ele possui o mesmo comportamento de quando chamamos Promise.prototype.then(undefined, onRejected) (de fato, chamando obj.catch(onRejected) internamente é chamado obj.then(undefined, onRejected)).
+
+
+4-R:A cláusula finally é executada após a excecução do bloco try e da(s) cláusula(s) catch porém antes das declarações seguintes ao try. Ela sempre é executada, independente se uma exceção for lançada ou capturada.
+
+
+5-:A palavra-chave ´async´ é usada antes de uma função para indicar que ela retornará uma promessa. 
+
+Em uma função async, você pode usar a palavra-chave ´await´ para pausar a execução e esperar que uma promise seja resolvida antes de continuar
+
+
+6-R:A vantagem do async/await é que ele torna o código mais legível e fácil de entender, pois permite que escrevamos código assíncrono de forma sequencial, como se fosse síncrono. Isso facilita a leitura e a estruturação do código, tornando-o mais claro e menos propenso a erros.
