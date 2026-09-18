@@ -98,3 +98,12 @@ Crie uma função `formatarProduto` que retorne uma frase com o nome e o preço 
 ## Entrega
 
 Entregue o arquivo JavaScript com os testes dos códigos `102` e `999` e as respostas das seis questões de análise abaixo, editando este arquivo.
+
+
+
+1.Para permitir o uso de await dentro da função e para que ela sempre retorne uma promise.
+2.Ele aguarda a busca de um produto pelo seu codigo.
+3.Caso não seja encontrado o código de produto indicado.
+4.Porque esse bloco sempre será executado apos o try ou o catch mostrando sempre uma mensagem final.
+5.O resultado da promise fica pendente e ele não realiza o catch.
+6.É melhor pois deixa o codigo mais legivel e mais facil de realizar manutenção.
